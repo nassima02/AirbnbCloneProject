@@ -1,7 +1,7 @@
 
 import Navbar from "./header-components/nav-bar";
 import Logo from "./header-components/logo";
-import AdminSection from "./header-components/admin-section";
+import AdminSection from "./header-components/admin-section/admin-section";
 import {Box} from "@mui/material";
 import SearchBar from "./header-components/search-bar";
 
