@@ -8,7 +8,7 @@ function Navbar() {
 
 	const handleClick = (to) => {
 		setSelectedLink(to);
-		navigate('./'); // Redirection vers l'URL spécifiée
+		navigate('./'); // Redirection vers l'URL de la page
 	};
 
 	const createNavLink = (label, to) => {
