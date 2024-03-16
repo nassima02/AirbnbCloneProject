@@ -1,0 +1,113 @@
+
+//---------------------------------------GENERAL-------------------------------------------------------------
+body{
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+  }
+  
+  p{
+    display: block;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }
+
+
+
+
+
+//--------------------------------------HEADER----------------------------------------------------------------------
+//SEARCHBAR--HEADER-BOTTOM
+
+.search{
+    margin: 10px; //marge a supprimer ( juste là pour mieux visualiser les éléments)
+    width: fit-content;
+    border: 1px solid #dddddd;
+    border-radius: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    font-family:"Roboto", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+  
+    &__child{
+      display: flex;
+      flex-direction: column;
+      gap:7px;
+      font-weight: 500;
+      padding: 15px 30px;
+      cursor: pointer;
+      position: relative;
+  
+      &:hover {
+        &::after {
+          display: none;
+        }
+      }
+  
+      &::after{
+        content: '';
+        width: 1px;
+        height: 30px;
+        background-color: #69696949;
+        position: absolute;
+        top: 50%; 
+        transform: translateY(-50%);
+        right: -1px;  
+      }
+  
+      &:active{
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.089) 0px 4px 12px;
+      }
+  
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.045);
+        border-radius: 37px;
+      }
+  
+      &__subtext{
+        color:#717171;
+        font-size: 0.9rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+      }
+    }
+  
+    &__last-child{
+      display: flex;
+      gap:18px;
+      align-items: center;
+      padding: 0px 10px 0px 0px;
+  
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.045);
+        border-radius: 37px;
+      }
+      
+      &__box{
+        display: flex;
+        flex-direction: column;
+        gap:7px;
+        font-weight: 500;
+        padding: 15px 30px;
+        cursor: pointer;
+      }
+    
+      &__button{
+        background-color: #FF385C;
+        color:white;
+        padding: 13px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+  } 
+  
+   
+  
+   
+  
